@@ -1,0 +1,135 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+}
+body{
+    height: 150px;
+}
+html{
+    scroll-behavior: smooth;
+    transition: 5s;
+}
+header{
+  
+    display: block;
+    height: 120px;
+    position: relative;
+    background-color: rgb(2, 2, 65);
+    text-align: center;
+}
+#title{
+   
+    text-align: left;
+    font-size: 25px;
+    display: block;
+    padding: 25px;
+    font-weight: bold;
+    color: rgb(240, 244, 244);
+}
+.menu li{
+    
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: inline;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.menu li a{
+   
+    padding: 10px;
+    margin: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.menu li a:hover{
+    background-color: rgb(36, 94, 201);
+   
+}
+.contenedor{
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    overflow: auto;
+    overflow: hidden;
+   
+
+}
+.contendor, .contenedor--img1{
+    position: relative;
+    max-width: 100%;
+    transition: 19s;
+    
+    
+}
+.contendor, .contenedor--img1:hover{
+    position: relative;
+    transform: scale(1.7);
+ 
+}
+.servicios{
+    margin: 0 auto;
+    padding: 50px;
+    
+  
+}
+
+.servicios i{
+    color: darkblue;
+    font-size: 80px;
+    transition: 2s;
+    
+}
+
+.servicios i:hover{
+    transition: 4s;
+    color: rgb(204, 0, 223);
+
+    
+}
+
+
+.servicios h2{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+.servicios li{
+    display: inline-block;
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    margin: 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-style: 1px solid; 
+}
+
+.servicios-descripcion{
+    font-size: 18px;
+    padding: 10px;
+
+}
+.servicios-precio{
+    font-size: 20px;
+  
+    margin-top: 10px;
+}
+footer{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(2, 2, 65);
+    color: aliceblue;
+    font-size: 20px;
+    height: 90px;
+}

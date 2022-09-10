@@ -3,10 +3,10 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
-   
     font-size: 18px;
+
 
 }
 
@@ -15,9 +15,9 @@ body{
     background: linear-gradient(90deg, rgb(209, 201, 201) 6%, rgba(223,229,231,1) 32%, rgb(248, 241, 241) 70%);
 
 }
+
 html{
     scroll-behavior: smooth;
-   
 }
 
 .fila{
@@ -28,12 +28,22 @@ html{
     clear: both;
     display: table;
 }
+
+header{
+ 
+    padding: 20px;
+    text-align: center;
+}
+#titulo{
+    font-weight: 900;
+    font-size: 20px;
+}
 nav{
-  
+    position: relative;
+    
     background-color: rgb(0, 35, 101);
     text-align: center;
-    padding: 20px;
-
+    padding: 10px;
 }
 
 nav ul li{
@@ -41,30 +51,36 @@ nav ul li{
     padding: 20px;
     left: 500px;
     margin: auto; 
-    
-   
 }
 
 nav ul li a{
-    padding: 20px;
+    border-bottom: 10px;
+    padding: 10px;
     color: rgb(255, 238, 238);
-    border-radius: 10px;
-    
-
+  
 }
 
 nav ul li a:hover{
     background-color: rgb(29, 87, 193);
 }
 
-
+#seccion1{
+    top: 10px;
+    overflow: auto;
+    overflow: hidden;
+}
 #seccion1 img{
     width: 100%;
+    transition: 19s;
+}
+#seccion1 img:hover{
+    transform: scale(1.7);
 }
 /*CONTENIDO DE SERVICIOS*/
 #servicios{
+    top: 40px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
    
 }
 #servicios h2{
@@ -73,15 +89,18 @@ nav ul li a:hover{
     position: relative;
     bottom: 15px;
 }
+
 #servicios i{
     display: flex;
     justify-content: center;
     color: darkblue;
-    font-size: 80px;
+    font-size: 50px;
+    transition: 4s;
    
 }
 #servicios i:hover{
     color: rgb(204, 0, 223);
+    transform: rotate(-30deg);
 }
 
 #servicios li{
@@ -103,13 +122,18 @@ nav ul li a:hover{
 [class *="col-"]{
     padding: 15px;
     float: left;
+
+
    
 }
 /*FOOTER*/
 #foot{
-    background-color: rgb(0, 35, 101);
+   top: 200px;
+   height: 80px;
+   background-color: rgb(0, 35, 101);
    display: flex;
    justify-content: center;
+   align-items: center;
    text-align: center;
    color: white;
    
@@ -117,7 +141,9 @@ nav ul li a:hover{
 
 /*Pantalla de escritorio lg*/
 @media (min-width:1200px){
-    .col-lg-12{width: 100%;}
+    .col-lg-12{width: 100%;
+     padding: 0;
+    }
     .col-lg-11{width: 81.66666667%;}
     .col-lg-10{width: 83%;}
     .col-lg-9{width: 75%; ;}
@@ -133,7 +159,9 @@ nav ul li a:hover{
 
 /*Pantalla MD*/
 @media (max-width: 1199px) and (min-width:992px){
-    .col-md-12{width: 100%;  }
+    .col-md-12{width: 100%; 
+       
+    }
     .col-md-11{width: 81.66666667%;}
     .col-md-10{width: 83%;}
     .col-md-9{width: 75%;  }
@@ -150,7 +178,9 @@ nav ul li a:hover{
 /*Pantalla de tablet small SM*/
 @media  (max-width: 991px) and (min-width:768px){
 
-    .col-sm-12{width: 100%;}
+    .col-sm-12{width: 100%;
+    
+    }
     .col-sm-11{width: 81.66666667%;}
     .col-sm-10{width: 83%;}
     .col-sm-9{width: 75%; }
@@ -168,7 +198,11 @@ nav ul li a:hover{
 
 @media  (max-width: 767px){
 
-    .col-xs-12{width:100%}
+    .col-xs-12{
+        width:100%;
+       
+    }
+  
     .col-xs-11{width: 81.66666667%;}
     .col-xs-10{width: 83%;}
     .col-xs-9{width: 75%; }

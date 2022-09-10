@@ -4,57 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transportes Go</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="columnas.css">
+    <link rel="stylesheet" href="normalize.csss">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
-<body>
-    <header>
-        <h1 id="title">Go-Max</h1>
-        <ul class="menu">
-            <li><a href="">Inicio</a></li>
-            <li><a href="#section-1">Servicios</a></li>
-            <li><a href="#section-2">Contacto</a></li>   
+<body> 
+     <!--Nombre de la empresa--->
+     <header class="fila">
+        <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 id="titulo">Transportes GO-MAX</h1>
         </ul>
-    </header>
-<main>
-    <div class="contenedor">
-        <img src="img/2.jpg" alt="truck" class="contenedor--img1">
-    </div> 
-    <section id="section-1"> 
-    <ul class="servicios">
+     </header>
+
+     <!--SECCION DE NAVEGACION BOTONES DE NAVEGACION--->
+     <nav class="fila">
+        <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-4">
+            <li><a href="#seccion1">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#seccion2">Contacto</a></li>
+        </ul>
+     </nav>
+
+       <!--SECCION CAMION--->
+<section id="seccion1" class="fila">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img src="img/2.jpg" alt="camion">
+            </div>
+        </div>
+</section>
+
+   
+     <!--SECCION 1 SERVICIOS--->
+<section id="servicios" class="fila">
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
         <li>
             <h2>Servicio de carga</h2>
             <i class="bi bi-truck"></i>
             <p class="servicios-descripcion">hasta 6 toneladas.</p>
-            <p class="servicios-precio">Precios accesibles</p>
-        </li>
+             <p class="servicios-precio">Precios accesibles</p>
+            </li>            
+        </div>
 
-        <li>
-            <h2>Servicio de localización</h2>
-            <i class="bi bi-geo-alt"></i>
-            <p class="servicios-descripcion">Monitoreo en tiempo real.</p>
-            <p class="servicios-precio">Viaje seguro, carga segura</p>
-        </li>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <li>
+                <h2>Servicio de localización</h2>
+                <i class="bi bi-geo-alt"></i>
+                <p class="servicios-descripcion">Monitoreo en tiempo real.</p>
+                <p class="servicios-precio">Viaje seguro, carga segura</p>
+            </li>
+        </div>
 
-        <li>
-            <h2>Servicio de maniobras</h2>
-            <i class="bi bi-box"></i>
-            <p class="servicios-descripcion">hasta 6 toneladas.</p>
-            <p class="servicios-precio"> Precios accesibles</p>
-        </li>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <li>
+                <h2>Servicio de maniobras</h2>
+                <i class="bi bi-box"></i>
+                <p class="servicios-descripcion">hasta 6 toneladas.</p>
+                <p class="servicios-precio"> Precios accesibles</p>
+            </li>
+        </div>
+      
+    </section>
+    <!--SECCION DE CONTACTO-->
+  
+    <!--SECCION  2 FOOTER--->
 
-    </section> 
-   
-</main>
-<section id="section-2"> 
-<footer>
-    <p>Transportes Go-Max</p>
-</footer>
-</section>
+    <section id="foot" class="fila">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p>GO-MAX 2022</p>
+            </div>
+        </div>
+    </section>
 
 
+
+
+  
+
+        
 </body>
 </html>
